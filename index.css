@@ -337,7 +337,7 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-@media(max-width: 500px) {
+@media(max-width: 450px) {
     .back-to-top {
         right: 1rem;
     }
@@ -423,7 +423,6 @@ body:not(.user-is-tabbing) a:focus {
     background-position: center;
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
-
     font-size: var(--font-size-normal);
 }
 
@@ -509,9 +508,28 @@ body:not(.user-is-tabbing) a:focus {
 .work__image-box {
     margin-bottom: var(--gutter-normal);
 }
+.hhkey {
+   display: none
+}
+.mtt {
+    display: none
+
+}
+.lvdp {
+    display: none
+
+}
+.crypto {
+    display: none
+
+}
+.coa {
+    display: none
+}
 
 @media(min-width: 901px) {
     .work__image-box {
+        display: flex;
         flex: 1;
         margin: 0 0 0 10rem;
     }
@@ -522,7 +540,51 @@ body:not(.user-is-tabbing) a:focus {
         height: 4rem;
     }
 }
+/* image sizing  for mobile  */
+@media(max-width: 500px) {
+    .work__image {
+        display:none
+    }
+    .hhkey {
+        display: block;
+        max-width: 260px;
+        margin-left: 2%;
 
+    }
+    .mtt {
+        display: block;
+        max-width: 260px;
+        margin-left: 2%;
+
+    }
+    .lvdp {
+        display: block;
+        max-width: 260px;
+        margin-left: 2%;
+
+    }
+    .crypto {
+        display: block;
+        max-width: 260px;
+        margin-left: 2%;
+
+    }
+    .coa {
+        display: flex;
+        max-width: 300px;
+
+    }
+    .about__photo-container {
+        display: flex;
+        max-width: 300px;
+        margin-left: 2%;
+    }
+    .header {
+        display: block;
+        max-width: auto;
+        height: 500px;
+    }
+}
 /* --------------------------------------- */
 /* ----- Clients ----- */
 /* --------------------------------------- */
