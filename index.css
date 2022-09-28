@@ -320,11 +320,17 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
     height: 5.5rem;
     width: 5.5rem;
-    background-color: var(--pink);
+    background-color: transparent;
+    border: var(--pink) 2px solid;
     border-radius: 50%;
     z-index: 10;
     visibility: hidden;
     transition: all .4s;
+}
+
+.back-to-top:hover {
+    background-color: var(--pink);
+    border: var(--pink) 2px solid;
 }
 
 .back-to-top__image {
@@ -449,6 +455,12 @@ body:not(.user-is-tabbing) a:focus {
 
     .header__text p {
         transform: scale(.8);
+    }
+    .header__text {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+    
     }
 }
 
@@ -583,39 +595,11 @@ body:not(.user-is-tabbing) a:focus {
     }
     .header {
         display: block;
+        background-color: gradient;
         max-width: auto;
-        height: 60vh;
+        height: 75vh;
     }
 }
-/* --------------------------------------- */
-/* ----- Clients ----- */
-/* --------------------------------------- */
-
-.client__logos {
-    display: flex;
-    justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
-}
-
-.client__logo {
-    height: 6.5rem;
-    max-width: 18rem;
-}
-
-@media(max-width: 1240px) {
-    .client__logos {
-        overflow-x: scroll;
-        padding: var(--gutter-normal);
-    }
-
-    .client__logo:not(:last-of-type) {
-        margin-right: var(--gutter-medium);
-    }
-}
-
-/* --------------------------------------- */
-/* ----- About ----- */
-/* --------------------------------------- */
 
 .about__content {
     display: flex;
@@ -672,10 +656,15 @@ body:not(.user-is-tabbing) a:focus {
 .footer__social-link-item:not(:last-of-type) {
     margin-right: var(--gutter-small);
 }
+.footer__social-link-item:hover {
+    transform: scale(1.2);
+    transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
+}
 
 .footer__social-image {
-    height: 4rem;
+    height: 6rem;
 }
+
 
 .footer__github-buttons {
     display: flex;
