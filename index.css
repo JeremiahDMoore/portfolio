@@ -349,9 +349,6 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-/* --------------------------------------- */
-/* ----- Navigation ----- */
-/* --------------------------------------- */
 
 .nav {
     display: flex;
@@ -448,9 +445,7 @@ body:not(.user-is-tabbing) a:focus {
 
 @media(max-width: 500px) {
     .header {
-        text-align: center;
         background-image: none;
-        padding-left: 4%;
     }
 
     .header__text p {
@@ -459,8 +454,7 @@ body:not(.user-is-tabbing) a:focus {
     .header__text {
         position: absolute;
         top: 40%;
-        transform: translateY(-50%);
-    
+        transform: translateY(-50%);    
     }
 }
 
@@ -595,7 +589,7 @@ body:not(.user-is-tabbing) a:focus {
     }
     .header {
         display: block;
-        background-color: gradient;
+        background-color: #000;
         max-width: auto;
         height: 75vh;
     }
