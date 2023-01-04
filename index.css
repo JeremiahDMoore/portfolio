@@ -37,9 +37,10 @@
     --line-height-small: 1.2;
 
     --black: #000;
-    --pink: #3273ff;
+    --blue: #3273ff;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
+    --yellow: #edf518da;
 
 
     --container-max-width: 1180px;
@@ -152,7 +153,7 @@ h2::after {
     display: block;
     height: 2px;
     width: 10rem;
-    background: var(--pink);
+    background: var(--blue);
     margin: var(--gutter-small) 0;
 }
 
@@ -203,7 +204,7 @@ a {
 
 button:focus,
 a:focus {
-    outline: 2px solid var(--pink);
+    outline: 2px solid var(--blue);
 }
 
 body:not(.user-is-tabbing) button:focus,
@@ -212,7 +213,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .link:hover {
-    color: var(--pink);
+    color: var(--blue);
 }
 
 .btn {
@@ -221,7 +222,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: 1rem 4.2rem;
     text-decoration: none;
     color: inherit;
-    border: 2px solid  var(--pink);
+    border: 2px solid  var(--blue);
     border-radius: 999px;
     font-weight: 400;
 }
@@ -246,21 +247,26 @@ body:not(.user-is-tabbing) a:focus {
 .btn:hover::after,
 .btn:focus::after {
     right: 0;
-    background: var(--pink);
+    background: var(--blue);
 }
 
-.btn--pink {
+.new {
+    color: var(--yellow);
+    
+}
+
+.btn--blue {
     background: transparent;
     transition: all 0.2s;
 }
 
-.btn--pink::after {
+.btn--blue::after {
     display: none;
 }
 
-.btn--pink:hover,
-.btn--pink:focus {
-    background: var(--pink);
+.btn--blue:hover,
+.btn--blue:focus {
+    background: var(--blue);
 }
 
 .link__text {
@@ -272,7 +278,7 @@ body:not(.user-is-tabbing) a:focus {
     font-style: italic;
     padding: 10px 25px 10px 25px;
     /* border-radius: 6px; */
-    /* border: 2px solid var(--pink); */
+    /* border: 2px solid var(--blue); */
 }
 
 .link__text::after {
@@ -300,7 +306,7 @@ body:not(.user-is-tabbing) a:focus {
     right: 0;
     border-radius: 6px;
     color: var(--white-1);
-    background: var(--pink);
+    background: var(--blue);
 }
 
 .link__text span {
@@ -321,7 +327,7 @@ body:not(.user-is-tabbing) a:focus {
     height: 5.5rem;
     width: 5.5rem;
     background-color: transparent;
-    border: var(--pink) 2px solid;
+    border: var(--blue) 2px solid;
     border-radius: 50%;
     z-index: 10;
     visibility: hidden;
@@ -329,8 +335,8 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .back-to-top:hover {
-    background-color: var(--pink);
-    border: var(--pink) 2px solid;
+    background-color: var(--blue);
+    border: var(--blue) 2px solid;
 }
 
 .back-to-top__image {
@@ -405,13 +411,13 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .nav__link:hover {
-    color: var(--pink);
+    color: var(--blue);
 }
 
 .nav__link:hover::after {
     right: 0;
     height: 2px;
-    background: var(--pink);
+    background: var(--blue);
 }
 
 /* --------------------------------------- */
