@@ -1,3 +1,5 @@
+
+
 /* -----------------------------------------
   Have focus outline only for keyboard users 
  ---------------------------------------- */
@@ -41,3 +43,4 @@ window.addEventListener("scroll", () => {
     alterStyles(isBackToTopRendered);
   }
 });
+
