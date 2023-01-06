@@ -165,6 +165,7 @@ h3 {
 @media(max-width: 500px) {
     .heading-primary {
         font-size: var(--font-size-large);
+
     }
 
     h2 {
@@ -460,9 +461,9 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 @media(max-width: 500px) {
-    /* .header {
+    .header {
         background-image: none;
-    } */
+    }
 
     .header__text p {
         transform: scale(.8);
