@@ -532,6 +532,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__image-box {
     margin-bottom: var(--gutter-normal);
+    padding-top: var(--gutter-normal);
 }
 .hhkey {
    display: none
