@@ -509,6 +509,35 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
 }
 
+.project-links {
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.project-site-link {
+    display: inline-flex;
+    align-items: center;
+    gap: .8rem;
+    padding: .8rem 2.2rem;
+}
+
+.project-link-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.store-badge {
+    display: block;
+    width: 12rem;
+    height: 4rem;
+    transition: transform .2s ease;
+}
+
+.project-links a:hover .store-badge,
+.project-links a:focus .store-badge {
+    transform: translateY(-2px);
+}
+
 .work__text {
     flex: 0 0 30%;
 }
@@ -533,6 +562,30 @@ body:not(.user-is-tabbing) a:focus {
 .work__image-box {
     margin-bottom: var(--gutter-normal);
     padding-top: var(--gutter-normal);
+}
+
+.project-showcase {
+    justify-content: center;
+    align-items: center;
+}
+
+.project-showcase__image {
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(50, 115, 255, .35);
+    border-radius: 1.6rem;
+    box-shadow: 0 2.5rem 6rem rgba(0, 0, 0, .45);
+}
+
+.project-showcase--phones {
+    gap: 2.4rem;
+}
+
+.project-showcase__phone {
+    display: block;
+    width: min(42%, 30rem);
+    border-radius: 2rem;
+    box-shadow: 0 2.5rem 6rem rgba(0, 0, 0, .45);
 }
 .hhkey {
    display: none
@@ -564,6 +617,20 @@ body:not(.user-is-tabbing) a:focus {
 @media(max-width: 900px) {
     .work__code {
         height: 4rem;
+    }
+
+    .project-showcase {
+        display: flex;
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .project-showcase--landscape {
+        max-width: 80rem;
+    }
+
+    .project-showcase__phone {
+        width: min(42%, 28rem);
     }
 }
 /* image sizing  for mobile  */
@@ -604,6 +671,16 @@ body:not(.user-is-tabbing) a:focus {
         display: flex;
         max-width: 300px;
         margin-left: 2%;
+    }
+    .project-links {
+        align-items: flex-start;
+    }
+    .project-showcase--phones {
+        gap: 1.2rem;
+    }
+    .project-showcase__phone {
+        width: calc(50% - .6rem);
+        border-radius: 1.2rem;
     }
     .header {
         display: block;
